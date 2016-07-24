@@ -4,11 +4,21 @@ import pathExists = require('path-exists');
 
 test('pathExists', t => {
   return pathExists('../test').then(actual => {
-    t.is(actual, true, 'work with directory');
+    t.true(actual, 'work with directory');
   });
 });
 test('pathExists', t => {
   return pathExists('../test/test.ts').then(actual => {
-    t.is(actual, true, 'work with file');
+    t.true(actual, 'work with file');
   });
+});
+
+test('pathExists.sync', t => {
+  t.true(pathExists.sync('../test'), 'work with directory');
+  t.end();
+});
+
+test('pathExists.sync', t => {
+  t.true(pathExists.sync('../test/test.ts'), 'work with file');
+  t.end();
 });
