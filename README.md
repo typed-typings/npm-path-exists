@@ -1,5 +1,7 @@
 # Typed Path Exists  [![Build Status](https://travis-ci.org/types/npm-path-exists.svg?branch=master)](https://travis-ci.org/types/npm-path-exists)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-path-exists.svg)](https://greenkeeper.io/)
+
 
 The type definition for [`path-exists`](https://github.com/sindresorhus/path-exists.git)
 
